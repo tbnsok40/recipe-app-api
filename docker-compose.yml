@@ -22,4 +22,8 @@ services:
 # build our image using the Docker Compose configuration
 
 # terminal > docker-compose run app sh -c "django-admin.py startproject app ."
-# 이렇게하면, 최상단 app file 아래에 app folder와 manage.py가 생성된다.
+# 이렇게하면, 최상단 app file 아래에 app folder와 manage.py
+
+# git add .
+# git commit -a
+# message 쓰고, ese + :wq 로 빠져나온다
