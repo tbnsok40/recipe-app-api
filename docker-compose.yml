@@ -1,0 +1,25 @@
+# this is configuration settings for our project
+
+version: '3'
+# now we need one service
+services:
+  app:
+    build:
+      context: .
+    ports:
+      - '8000:8000'
+    volumes:
+      - ./app:/app
+    command: >
+      sh -c "python manage.py runserver 0.0.0.0:8000"
+    # shell command : python ---- available to run all IP(0.0.0.0)
+
+    # dat dot is our current directory
+
+# were going to have a service called app and thd build section of the configuration
+
+# terminal > docker-compose build
+# build our image using the Docker Compose configuration
+
+# terminal > docker-compose run app sh -c "django-admin.py startproject app ."
+# 이렇게하면, 최상단 app file 아래에 app folder와 manage.py가 생성된다.
