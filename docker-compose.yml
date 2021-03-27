@@ -1,16 +1,20 @@
-# this is configuration settings for our project
-
+# yaml file is configuration settings for all of the services that make up our  project
+"""
+# what is docker compose ->
+a Tool that allows us to run our Docker image easily from our project location.
+"""
 version: '3'
+
 # now we need one service
 services:
   app:
     build:
-      context: .
+      context: . # this means root directory
     ports:
       - '8000:8000'
-    volumes:
+    volumes: # allows to update our image into our docker image in real time -=> 변경사항이 있으면 자동으로 업데이트 된다는 뜻 (in real time)
       - ./app:/app
-    command: >
+    command: > # for line change use that 'greater' mark
       sh -c "python manage.py runserver 0.0.0.0:8000"
     # shell command : python ---- available to run all IP(0.0.0.0)
 
