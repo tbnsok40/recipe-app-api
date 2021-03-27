@@ -44,6 +44,9 @@ Every time you push a change to GitHub, Travis-CI will automatically detect the 
 \
 quiz 2
 Django searches for any Python module starting with "test". This is why you can store your tests in "tests.py" or "tests/test_something.py"
+\
+quiz 3
+Correct! Normalizing the email address will ensure that the domain (everything after the "@") is lowercase
 
 
 
