@@ -1,9 +1,7 @@
-# yaml file is configuration settings for all of the services that make up our  project
-"""
-# what is docker compose ->
-a Tool that allows us to run our Docker image easily from our project location.
-"""
 version: '3'
+# yaml file is configuration settings for all of the services that make up our  project
+#
+# what is docker compose ->a Tool that allows us to run our Docker image easily from our project location.
 
 # now we need one service
 services:
